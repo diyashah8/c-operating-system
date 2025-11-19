@@ -116,7 +116,6 @@ int main() {
             time++; // CPU idle
         }
     }
-
     printf("\nPID\tArrival\tBurst\tCompletion\tTurnaround\tWaiting\n");
     for (int i = 0; i < n; i++) {
         printf("P%d\t%d\t%d\t%d\t\t%d\t\t%d\n",
