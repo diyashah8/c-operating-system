@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include<stdio.h>
 int main() {
     int n, i, j;
     int burst_time[20], arrival_time[20], completion_time[20];
