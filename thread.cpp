@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 #include<p.thread>
 void*thread_task(void*args)
 {
@@ -6,5 +6,9 @@ void*thread_task(void*args)
     return NULL;
 }
 int main()
-
+{
+    pthread_t t1;
+   
     
+    return 0;
+}
