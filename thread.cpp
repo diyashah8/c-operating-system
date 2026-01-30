@@ -8,6 +8,7 @@ void*thread_task(void*args)
 int main()
 {
     pthread_t t1;
+   intvalue = 45;
    
     
     return 0;
