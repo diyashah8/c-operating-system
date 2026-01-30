@@ -9,7 +9,7 @@ int main()
 {
     pthread_t t1;
    intvalue = 45;
-   pthread_create(&t1, NULL, thread_task &value);
+   pthread_create(&t1, NULL, thread_task &values);
     
     return 0;
 }
