@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 #include<p.thread>
 void*thread_task(void*args)
 {
@@ -9,7 +9,7 @@ int main()
 {
     pthread_t t1;
    int value = 45;
-   pthread_create(&t1, NULL, thread_task &values);
+   pthread_create(&t1, thread_task &values);
     pthread_t
     return 0;
 }
