@@ -1,5 +1,5 @@
-// Write a C program to implement deadlock detection algorithm
 #include <stdio.h>
+#include <conio.h>  // Needed for getch()
 
 static int mark[20];
 int i, j, np, nr;
@@ -40,21 +40,9 @@ int main()
         }
     }
 
-    // Marking processes with zero allocation
+    // Initialize mark array
     for (i = 0; i < np; i++)
-    {
-        int count = 0;
-        for (j = 0; j < nr; j++)
-        {
-            if (alloc[i][j] == 0)
-                count++;
-            else
-                break;
-        }
-
-        if (count == nr)
-            mark[i] = 1;
-    }
+        mark[i] = 0;
 
     // Initialize work vector w with available
     for (j = 0; j < nr; j++)
@@ -105,5 +93,6 @@ int main()
     if (!deadlock)
         printf("\nNo deadlock detected");
 
+    getch();  // pause output in console
     return 0;
 }
